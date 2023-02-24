@@ -1,0 +1,46 @@
+.hero {
+  // &__content{
+
+  // }
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 20px;
+
+    span {
+      display: block;
+    }
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-color-gray);
+    margin-bottom: 33px;
+  }
+
+  &__btn {
+    @include button;
+    font-size: 16px;
+    padding: 17px 99px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 22px;
+  }
+}

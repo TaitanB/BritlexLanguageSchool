@@ -1,0 +1,20 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: row;
+
+  &__logo {
+    @include logo;
+  }
+
+  @include tablet {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+}
+
+.menu-open {
+  margin-left: auto;
+  background: none;
+  border: none;
+}

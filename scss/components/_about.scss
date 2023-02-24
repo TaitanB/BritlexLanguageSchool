@@ -1,0 +1,41 @@
+.about {
+  img {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.539;
+    text-align: center;
+    color: var(--text-color-gray);
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    text-align: center;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 24px;
+    color: #2a3246;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    span {
+      font-weight: 400;
+      font-size: 15px;
+      color: var(--text-color-gray);
+    }
+  }
+}

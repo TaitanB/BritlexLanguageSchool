@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #c4c4c4;
+
+  &__logo {
+    @include logo;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 12px;
+  }
+
+  &__item {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.455;
+    color: var(--text-color-gray);
+  }
+}

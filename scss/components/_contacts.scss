@@ -1,0 +1,49 @@
+.contacts {
+  img {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--color-black);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-color-gray);
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 16px 26px;
+    border-radius: 5px;
+    width: 234px;
+    font-size: 12px;
+    color: var(--text-color-gray);
+  }
+
+  &___btn {
+    @include button;
+    padding: 19px 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
