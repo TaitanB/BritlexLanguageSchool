@@ -9,9 +9,15 @@
 
   &__list {
     img {
-      margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-auto-rows: minmax(400px, auto);
+      gap: 20px;
     }
   }
 
@@ -19,10 +25,23 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    // flex-grow: 1;
+
+    div {
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+    }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 
   &__subtitle {
@@ -31,6 +50,11 @@
     line-height: 1.556;
     color: var(--text-color-dark);
     margin-bottom: 30px;
+
+    @include tablet {
+      text-align: left;
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
@@ -39,6 +63,12 @@
     text-align: center;
     color: var(--text-color-gray);
     margin-bottom: 30px;
+
+    @include tablet {
+      text-align: left;
+      margin-bottom: 23px;
+      flex-grow: 1;
+    }
   }
 
   &__price {
@@ -57,11 +87,30 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include tablet {
+      font-size: 22px;
+      padding: 6px 17px;
+    }
+
     span {
       display: block;
       font-size: 14px;
       color: #546269;
       padding-left: 5px;
+
+      @include tablet {
+        font-size: 16px;
+        padding-left: 15px;
+      }
     }
+  }
+}
+
+.img {
+  margin-bottom: 20px;
+  outline: auto;
+  @include tablet {
+    // flex-grow: 1;
+    margin-bottom: 15px;
   }
 }

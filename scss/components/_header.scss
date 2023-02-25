@@ -5,6 +5,10 @@
 
   &__logo {
     @include logo;
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
 
   @include tablet {

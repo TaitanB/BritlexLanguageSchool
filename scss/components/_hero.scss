@@ -5,6 +5,10 @@
 
   img {
     margin-bottom: 16px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -20,6 +24,9 @@
 
     @include tablet {
       text-align: left;
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 25px;
     }
   }
 
@@ -28,6 +35,11 @@
     text-align: center;
     color: var(--text-color-gray);
     margin-bottom: 33px;
+
+    @include tablet {
+      font-size: 16px;
+      text-align: left;
+    }
   }
 
   &__btn {
@@ -36,6 +48,11 @@
     padding: 17px 99px;
     margin-right: auto;
     margin-left: auto;
+
+    @include tablet {
+      font-size: 18px;
+      padding: 18px 67px;
+    }
   }
 
   @include tablet {
