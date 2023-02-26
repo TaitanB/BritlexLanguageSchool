@@ -44,14 +44,39 @@
         </button>
       </header>
       <section class="hero container section">
-        <img
-          src="./images/320/learning-languages-320-min.png"
-          alt="Learning languages"
-          width="299"
-          height="299"
-        />
+        <picture class="hero__img">
+          <source
+            srcset="
+              ./images/1600/learning-languages-1600-min.png    1x,
+              ./images/1600/learning-languages-1600-2x-min.png 2x
+            "
+            media="(min-width: 1600px)"
+          />
+          <source
+            srcset="
+              ./images/768/learning-languages-tab-min.png    1x,
+              ./images/768/learning-languages-tab-2x-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/320/learning-languages-320-min.png    1x,
+              ./images/320/learning-languages-320-2x-min.png 2x
+            "
+            media="(man-width: 767px)"
+          />
+          <img
+            src="./images/320/learning-languages-320-min.png"
+            alt="Learning languages"
+            sizes="299px"
+          />
+        </picture>
         <div class="hero__content">
-          <h1 class="hero__title">Learn Any <span>Foreign Language</span></h1>
+          <h1 class="hero__title">
+            Learn <span>Any </span> <span>Foreign </span><span>Language</span
+            ><span class="bulb"></span>
+          </h1>
           <p class="hero__text">
             With our teachers who write a program for each student, you will be
             able to make your first sketch after the first lesson.
@@ -65,12 +90,35 @@
 
           <ul class="skills__list">
             <li class="skills__item">
-              <img
-                src="./images/320/shared-goals-320-min.png"
-                alt="Shared goals"
-                width="213"
-                height="213"
-              />
+              <picture class="skills__img">
+                <source
+                  srcset="
+                    ./images/1600/shared-goals-1600-min.png    1x,
+                    ./images/1600/shared-goals-1600-2x-min.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/768/shared-goals-tab-min.png    1x,
+                    ./images/768/shared-goals-tab-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/320/shared-goals-320-min.png    1x,
+                    ./images/320/shared-goals-320-2x-min.png 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/320/shared-goals-320-min.png"
+                  alt="Shared goals"
+                  sizes="213px"
+                />
+              </picture>
+
               <div>
                 <h3 class="skills__subtitle">Speaking</h3>
                 <p class="skills__text">
@@ -84,12 +132,35 @@
               </div>
             </li>
             <li class="skills__item">
-              <img
-                src="./images/320/typewriter-320-min.png"
-                alt="Typewriter"
-                width="204"
-                height="204"
-              />
+              <picture class="skills__img">
+                <source
+                  srcset="
+                    ./images/1600/typewriter-1600-min.png    1x,
+                    ./images/1600/typewriter-1600-2x-min.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/768/typewriter-tab-min.png    1x,
+                    ./images/768/typewriter-tab-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/320/typewriter-320-min.png    1x,
+                    ./images/320/typewriter-320-2x-min.png 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/320/typewriter-320-min.png"
+                  alt="Typewriter"
+                  sizes="204px"
+                />
+              </picture>
+
               <div>
                 <h3 class="skills__subtitle">Writing</h3>
                 <p class="skills__text">
@@ -101,12 +172,35 @@
               </div>
             </li>
             <li class="skills__item">
-              <img
-                src="./images/320/house-bookshelves-320-min.png"
-                alt="Shared goals"
-                width="236"
-                height="157"
-              />
+              <picture class="skills__img">
+                <source
+                  srcset="
+                    ./images/1600/house-bookshelves-1600-min.png    1x,
+                    ./images/1600/house-bookshelves-1600-2x-min.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/768/house-bookshelves-tab-min.png    1x,
+                    ./images/768/house-bookshelves-tab-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/320/house-bookshelves-320-min.png    1x,
+                    ./images/320/house-bookshelves-320-2x-min.png 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/320/house-bookshelves-320-min.png"
+                  alt="Shared goals"
+                  sizes="236px"
+                />
+              </picture>
+
               <div>
                 <h3 class="skills__subtitle">Reading</h3>
                 <p class="skills__text">
@@ -117,12 +211,38 @@
               </div>
             </li>
             <li class="skills__item">
-              <img
-                src="./images/320/podcast-audience-320-min.png"
-                alt="Shared goals"
-                width="232"
-                height="154"
-              />
+              <picture class="skills__img">
+                <source
+                  srcset="
+                    ./images/1600/podcast-audience-1600-min.png    1x,
+                    ./images/1600/podcast-audience-1600-2x-min.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                  sizes="408px"
+                />
+                <source
+                  srcset="
+                    ./images/768/podcast-audience-tab-min.png    1x,
+                    ./images/768/podcast-audience-tab-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="202px"
+                />
+                <source
+                  srcset="
+                    ./images/320/podcast-audience-320-min.png    1x,
+                    ./images/320/podcast-audience-320-2x-min.png 2x
+                  "
+                  media="(man-width: 767px)"
+                  sizes="236px"
+                />
+                <img
+                  src="./images/320/podcast-audience-320-min.png"
+                  alt="Shared goals"
+                  sizes="232px"
+                />
+              </picture>
+
               <div>
                 <h3 class="skills__subtitle">Listening</h3>
                 <p class="skills__text">

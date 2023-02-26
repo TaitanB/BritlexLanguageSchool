@@ -1,9 +1,11 @@
 .hero {
-  // &__content{
+  &__content {
+    @include tablet {
+      width: 330px;
+    }
+  }
 
-  // }
-
-  img {
+  &__img {
     margin-bottom: 16px;
 
     @include tablet {
@@ -19,14 +21,17 @@
     margin-bottom: 20px;
 
     span {
-      display: block;
+      display: inline-block;
     }
 
     @include tablet {
+      position: relative;
       text-align: left;
       font-size: 36px;
       line-height: 1.25;
       margin-bottom: 25px;
+
+      width: 310px;
     }
   }
 
@@ -58,6 +63,17 @@
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
-    gap: 22px;
+    gap: 8px;
+  }
+}
+
+.bulb {
+  @include tablet {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-image: url(/images/768/light-bulb-min.png);
+    bottom: 0;
+    right: 0;
   }
 }
