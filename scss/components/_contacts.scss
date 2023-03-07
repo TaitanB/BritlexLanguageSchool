@@ -6,9 +6,11 @@
     padding-top: 45px;
     gap: 36px;
 
-    // > div {
-    //   align-items: center;
-    // }
+    > div {
+      // align-items: center;
+      width: 434px;
+      padding-top: 55px;
+    }
   }
 
   img {
@@ -31,7 +33,7 @@
 
     @include tablet {
       position: absolute;
-      top: 0;
+      top: 45px;
       left: 295px;
       margin-bottom: 0;
     }

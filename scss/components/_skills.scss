@@ -60,6 +60,8 @@
     background: var(--bg-color);
     border-radius: 5px;
     padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
 
     div {
       flex-direction: column;
@@ -71,9 +73,25 @@
     }
   }
 
+  &__item:nth-child(3) .skills__img {
+    @include tablet {
+      flex-grow: 1;
+    }
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 21px;
 
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    margin: 0 auto 20px;
+  }
+
+  &__item:nth-child(4) .skills__img {
     @include tablet {
       margin-bottom: 0;
     }
@@ -104,6 +122,9 @@
 
   &__btn {
     @include button;
-    font-size: 16px;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 }

@@ -5,12 +5,16 @@
     color: var(--color-black);
     text-align: center;
     margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
-    img {
-      margin-left: auto;
-      margin-right: auto;
+    .img {
+      height: 210px;
+      // flex-grow: 1;
     }
 
     @include tablet {
@@ -25,7 +29,6 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    // flex-grow: 1;
 
     div {
       @include tablet {
@@ -104,13 +107,14 @@
       }
     }
   }
-}
 
-.img {
-  margin-bottom: 20px;
-  outline: auto;
-  @include tablet {
-    // flex-grow: 1;
-    margin-bottom: 15px;
+  &__img {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: auto;
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
 }
