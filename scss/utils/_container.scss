@@ -15,7 +15,8 @@
   }
 
   @include desktop {
-    width: 1522px;
+    width: 1338px;
+    padding: 0 131px;
   }
 }
 
@@ -27,8 +28,8 @@
     // padding-top: 100px;
   }
 
-  // @include desktop {
-  //   padding-bottom: 120px;
-  //   padding-top: 120px;
-  // }
+  @include desktop {
+    padding-bottom: 180px;
+    // padding-top: 120px;
+  }
 }

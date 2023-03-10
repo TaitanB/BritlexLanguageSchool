@@ -9,11 +9,20 @@
     @include tablet {
       font-size: 30px;
     }
+
+    @include desktop {
+      font-size: 36px;
+    }
   }
 
   @include tablet {
     padding-top: 39px;
     padding-bottom: 39px;
+  }
+
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -21,4 +30,8 @@
   margin-left: auto;
   background: none;
   border: none;
+
+  @include desktop {
+    display: none;
+  }
 }

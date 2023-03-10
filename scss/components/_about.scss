@@ -16,7 +16,16 @@
     > div {
       padding-top: 55px;
       width: 321px;
+
+      @include desktop {
+        padding-top: 132px;
+        width: 652px;
+      }
     }
+  }
+
+  @include desktop {
+    gap: 146px;
   }
 
   &__title {
@@ -34,6 +43,12 @@
       font-size: 30px;
       margin-bottom: 0;
     }
+
+    @include desktop {
+      font-size: 48px;
+      margin-bottom: 60px;
+      left: 131px;
+    }
   }
 
   &__text {
@@ -47,6 +62,11 @@
       font-size: 14px;
       line-height: 1.5;
       text-align: left;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      line-height: 1.8;
     }
   }
 
@@ -72,6 +92,12 @@
       margin-bottom: 0;
     }
 
+    @include desktop {
+      width: 108px;
+      text-align: center;
+      font-size: 48px;
+    }
+
     span {
       font-weight: 400;
       font-size: 15px;
@@ -79,6 +105,10 @@
 
       @include tablet {
         font-size: 13px;
+      }
+
+      @include desktop {
+        font-size: 20px;
       }
     }
   }

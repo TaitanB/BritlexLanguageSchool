@@ -9,6 +9,11 @@
     @include tablet {
       font-size: 30px;
     }
+
+    @include desktop {
+      font-size: 48px;
+      margin-bottom: 60px;
+    }
   }
 
   &__img {
@@ -52,7 +57,15 @@
       > :nth-child(3) {
         grid-column: 3;
         padding-top: 34px;
+
+        @include desktop {
+          padding-top: 18px;
+        }
       }
+    }
+
+    @include desktop {
+      grid-gap: 30px;
     }
   }
 
@@ -70,6 +83,11 @@
     @include tablet {
       border-radius: 10px;
       padding-bottom: 25px;
+      align-items: center;
+    }
+
+    @include desktop {
+      padding: 18px 32px;
     }
   }
 
@@ -106,6 +124,11 @@
     @include tablet {
       font-size: 20px;
     }
+
+    @include desktop {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
@@ -118,6 +141,10 @@
       margin-bottom: 15px;
       flex-grow: 1;
     }
+
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__btn {
@@ -125,6 +152,12 @@
 
     @include tablet {
       font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 18px;
+      padding: 15px 58px;
+      border-radius: 10px;
     }
   }
 }

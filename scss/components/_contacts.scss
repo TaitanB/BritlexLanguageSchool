@@ -10,7 +10,16 @@
       // align-items: center;
       width: 434px;
       padding-top: 55px;
+
+      @include desktop {
+        width: 767px;
+        padding-top: 132px;
+      }
     }
+  }
+
+  @include desktop {
+    gap: 144px;
   }
 
   img {
@@ -37,6 +46,13 @@
       left: 295px;
       margin-bottom: 0;
     }
+
+    @include desktop {
+      font-size: 48px;
+      margin-bottom: 60px;
+      top: 48px;
+      left: 701px;
+    }
   }
 
   &__text {
@@ -47,6 +63,11 @@
 
     @include tablet {
       text-align: left;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      width: 654px;
     }
   }
 
@@ -59,6 +80,10 @@
       gap: 6px;
     }
 
+    @include desktop {
+      gap: 30px;
+    }
+
     label {
       margin-left: auto;
       margin-right: auto;
@@ -67,15 +92,24 @@
 
   &__input {
     margin-bottom: 20px;
-    padding: 16px 26px;
+    padding: 17px 27px;
     border-radius: 5px;
     width: 234px;
     font-size: 12px;
+    border: 1px solid var(--text-color-gray);
     color: var(--text-color-gray);
 
     @include tablet {
       width: 227px;
       margin-bottom: 0;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.875;
+      width: 365px;
+      padding: 18px 29px;
+      border-radius: 10px;
     }
   }
 
@@ -88,6 +122,13 @@
     @include tablet {
       font-size: 13px;
       padding: 14px 39px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      padding: 19px 106px;
     }
   }
 }
