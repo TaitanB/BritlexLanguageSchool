@@ -1,24 +1,76 @@
 .nav {
-  display: none;
+  &__wraper {
+    position: relative;
+
+    @include tablet {
+      // background-color: var(--color-white);
+      // width: 60%;
+    }
+
+    @include desktop {
+      display: flex;
+      background: inherit;
+      position: static;
+      flex-direction: row;
+      border-top: none;
+      gap: 121px;
+      padding: 0;
+    }
+  }
+  position: fixed;
+  top: 96px;
+  left: 0;
+  padding: 50px 15px;
+  height: 100%;
+
+  background-color: var(--color-white);
+  z-index: 10;
+  border-top: 1px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    // background: rgba(7, 34, 47, 0.7);
+    width: 50%;
+    top: 123px;
+  }
 
   @include desktop {
-    display: flex;
-    gap: 121px;
+    width: 996px;
+    background: inherit;
+    position: static;
+    flex-direction: row;
+    border-top: none;
   }
 
   &__list {
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+    @include desktop {
+      flex-direction: row;
+      gap: 25px;
+      justify-content: space-between;
+      // align-items: center;
+      margin-bottom: 0;
+    }
   }
 
   &__item {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 2.95;
     color: var(--text-color-dark);
-    padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    // text-align: center;
+    padding: 0 10px;
+
+    @include desktop {
+      font-size: 20px;
+
+      border-radius: 10px;
+    }
   }
 
   &__item:hover,
@@ -32,9 +84,37 @@
     font-size: 20px;
     text-align: center;
     color: var(--color-black);
-    padding: 21px 113px;
     border: 2px solid var(--text-color-dark);
-    border-radius: 10px;
-    background-color: transparent;
+    padding: 15px 101px;
+    background-color: var(--color-white);
+    letter-spacing: normal;
+
+    @include desktop {
+      padding: 21px 113px;
+      border-radius: 10px;
+    }
   }
+}
+
+.menu-close {
+  width: 45px;
+  height: 34px;
+  background: var(--color-white);
+  position: absolute;
+  border: none;
+  top: -115px;
+  right: -7px;
+
+  @include tablet {
+    top: -127px;
+    right: 39px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.no-scroll {
+  position: fixed;
 }
