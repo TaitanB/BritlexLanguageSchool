@@ -122,6 +122,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__logo {
   font-size: 24px;
@@ -163,6 +169,64 @@ body {
   .menu-open {
     display: none;
   }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 121px;
+  }
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__item {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text-color-dark);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.nav__item:hover, .nav__item:focus {
+  color: var(--color-white);
+  background: var(--acent-color);
+}
+.nav__btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  background-color: var(--text-color-dark);
+  padding: 14px 43px;
+  border: 1px solid var(--text-color-dark);
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-black);
+  padding: 21px 113px;
+  border: 2px solid var(--text-color-dark);
+  border-radius: 10px;
+  background-color: transparent;
+}
+.nav__btn:hover, .nav__btn:focus {
+  background-color: var(--acent-color);
+  color: var(--color-white);
 }
 
 .hero {
@@ -515,6 +579,8 @@ body {
 
 .about__img {
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .about__img {
@@ -900,7 +966,6 @@ body {
 @media screen and (min-width: 1600px) {
   .contacts__title {
     font-size: 48px;
-    margin-bottom: 60px;
     top: 48px;
     left: 701px;
   }
@@ -1091,7 +1156,7 @@ body {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background: #8f95a5;
+  background: var(--text-color-gray);
   margin: 7px 4px;
 }
 @media screen and (min-width: 1600px) {

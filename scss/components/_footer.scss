@@ -59,7 +59,7 @@
       width: 2px;
       height: 2px;
       border-radius: 50%;
-      background: #8f95a5;
+      background: var(--text-color-gray);
       margin: 7px 4px;
 
       @include desktop {

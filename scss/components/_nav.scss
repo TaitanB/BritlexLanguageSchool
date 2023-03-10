@@ -1,0 +1,40 @@
+.nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    gap: 121px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color-dark);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    color: var(--color-white);
+    background: var(--acent-color);
+  }
+
+  &__btn {
+    @include button;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-black);
+    padding: 21px 113px;
+    border: 2px solid var(--text-color-dark);
+    border-radius: 10px;
+    background-color: transparent;
+  }
+}

@@ -7,7 +7,6 @@
     gap: 36px;
 
     > div {
-      // align-items: center;
       width: 434px;
       padding-top: 55px;
 
@@ -49,7 +48,6 @@
 
     @include desktop {
       font-size: 48px;
-      margin-bottom: 60px;
       top: 48px;
       left: 701px;
     }

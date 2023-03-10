@@ -16,10 +16,6 @@
   }
 }
 
-@mixin calc($count) {
-  width: calc((100% - var(--gap) * ($count - 1)) / $count);
-}
-
 @mixin retina {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
