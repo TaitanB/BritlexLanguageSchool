@@ -101,23 +101,23 @@
     position: absolute;
     width: 72px;
     height: 72px;
-    background-image: url(/images/768/light-bulb-min.png);
+    background-image: url(./images/768/light-bulb-min.png);
     bottom: 0;
     right: 0;
 
-    // @include retina {
-    //   background-image: url(/images/768/light-bulb-2x-min.png);
-    // }
+    @include retina {
+      background-image: url(./images/768/light-bulb-2x-min.png);
+    }
   }
 
   @include desktop {
     width: 120px;
     height: 120px;
     bottom: 50px;
-    background-image: url(/images/1600/bulb-icon-min.png);
+    background-image: url(./images/1600/bulb-icon-min.png);
 
-    // @include retina {
-    //   background-image: url(/images/1600/bulb-icon-2x-min.png);
-    // }
+    @include retina {
+      background-image: url(./images/1600/bulb-icon-2x-min.png);
+    }
   }
 }
