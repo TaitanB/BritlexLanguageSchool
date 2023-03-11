@@ -172,6 +172,29 @@ body {
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: rgba(7, 34, 47, 0.7);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: inherit;
+    position: static;
+  }
+}
+.nav__wraper {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,14 +207,18 @@ body {
   width: 300px;
   background-color: var(--color-white);
   z-index: 1;
+  left: -350px;
+  -webkit-transition: left 500ms linear;
+  transition: left 500ms linear;
 }
 @media screen and (min-width: 768px) {
-  .nav {
+  .nav__wraper {
     padding: 0 39px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .nav {
+  .nav__wraper {
+    position: static;
     width: 996px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -199,28 +226,6 @@ body {
             flex-direction: row;
     padding: 0;
     margin-left: auto;
-  }
-}
-.nav__wraper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .nav__wraper {
-    background-color: rgba(7, 34, 47, 0.7);
-  }
-}
-@media screen and (min-width: 1600px) {
-  .nav__wraper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: inherit;
-    position: static;
   }
 }
 .nav__bottom {
@@ -279,16 +284,29 @@ body {
   color: var(--text-color-dark);
   border-radius: 5px;
   padding: 0 10px;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1600px) {
   .nav__item {
     font-size: 20px;
     border-radius: 10px;
+    -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .nav__item:hover, .nav__item:focus {
   color: var(--color-white);
-  background: var(--acent-color);
+  background-color: var(--acent-color);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1600px) {
+  .nav__item:hover, .nav__item:focus {
+    scale: 0.9;
+    -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .nav__btn {
   display: inline-block;
@@ -301,6 +319,8 @@ body {
   padding: 14px 43px;
   border: 1px solid var(--text-color-dark);
   border-radius: 5px;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 20px;
   text-align: center;
   color: var(--color-black);
@@ -312,6 +332,8 @@ body {
 .nav__btn:hover, .nav__btn:focus {
   background-color: var(--acent-color);
   color: var(--color-white);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1600px) {
   .nav__btn {
@@ -351,6 +373,18 @@ body {
 
 .no-scroll {
   position: fixed;
+}
+
+.animationOpen {
+  left: 0;
+  -webkit-transition: left 500ms linear;
+  transition: left 500ms linear;
+}
+
+.animationClose {
+  left: -500px;
+  -webkit-transition: left 500ms linear;
+  transition: left 500ms linear;
 }
 
 .hero {
@@ -441,6 +475,8 @@ body {
   padding: 14px 43px;
   border: 1px solid var(--text-color-dark);
   border-radius: 5px;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   padding: 17px 99px;
   margin-right: auto;
@@ -449,6 +485,8 @@ body {
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--acent-color);
   color: var(--color-white);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .hero__btn {
@@ -487,14 +525,14 @@ body {
     position: absolute;
     width: 72px;
     height: 72px;
-    background-image: url(./images/768/light-bulb-min.png);
+    background-image: url(/images/768/light-bulb-min.png);
     bottom: 0;
     right: 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .bulb {
-    background-image: url(./images/768/light-bulb-2x-min.png);
+    background-image: url(/images/768/light-bulb-2x-min.png);
   }
 }
 @media screen and (min-width: 1600px) {
@@ -502,12 +540,12 @@ body {
     width: 120px;
     height: 120px;
     bottom: 50px;
-    background-image: url(./images/1600/bulb-icon-min.png);
+    background-image: url(/images/1600/bulb-icon-min.png);
   }
 }
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .bulb {
-    background-image: url(./images/1600/bulb-icon-2x-min.png);
+    background-image: url(/images/1600/bulb-icon-2x-min.png);
   }
 }
 
@@ -693,10 +731,14 @@ body {
   padding: 14px 43px;
   border: 1px solid var(--text-color-dark);
   border-radius: 5px;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .skills__btn:hover, .skills__btn:focus {
   background-color: var(--acent-color);
   color: var(--color-white);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .skills__btn {
@@ -1183,6 +1225,8 @@ body {
   padding: 14px 43px;
   border: 1px solid var(--text-color-dark);
   border-radius: 5px;
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 19px 110px;
   margin-left: auto;
   margin-right: auto;
@@ -1190,6 +1234,8 @@ body {
 .contacts___btn:hover, .contacts___btn:focus {
   background-color: var(--acent-color);
   color: var(--color-white);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .contacts___btn {
@@ -1203,6 +1249,7 @@ body {
   .contacts___btn {
     font-size: 20px;
     padding: 19px 106px;
+    border-radius: 10px;
   }
 }
 
@@ -1284,6 +1331,8 @@ body {
   font-size: 11px;
   line-height: 1.455;
   color: var(--text-color-gray);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__item span {
   display: block;
@@ -1307,4 +1356,10 @@ body {
   .footer__item {
     font-size: 24px;
   }
+}
+.footer__item:hover, .footer__item:focus {
+  scale: 0.9;
+  color: var(--acent-color);
+  -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
