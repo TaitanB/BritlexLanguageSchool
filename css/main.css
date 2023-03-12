@@ -208,6 +208,7 @@ body {
   background-color: var(--color-white);
   z-index: 1;
   left: -350px;
+  top: 0;
   -webkit-transition: left 500ms linear;
   transition: left 500ms linear;
 }
@@ -382,9 +383,9 @@ body {
 }
 
 .animationClose {
-  left: -500px;
-  -webkit-transition: left 500ms linear;
-  transition: left 500ms linear;
+  top: -1500px;
+  -webkit-transition: top 500ms linear;
+  transition: top 500ms linear;
 }
 
 .hero {
@@ -525,14 +526,14 @@ body {
     position: absolute;
     width: 72px;
     height: 72px;
-    background-image: url(/images/768/light-bulb-min.png);
+    background-image: url(./images/768/light-bulb-min.png);
     bottom: 0;
     right: 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .bulb {
-    background-image: url(/images/768/light-bulb-2x-min.png);
+    background-image: url(./images/768/light-bulb-2x-min.png);
   }
 }
 @media screen and (min-width: 1600px) {
@@ -540,12 +541,12 @@ body {
     width: 120px;
     height: 120px;
     bottom: 50px;
-    background-image: url(/images/1600/bulb-icon-min.png);
+    background-image: url(./images/1600/bulb-icon-min.png);
   }
 }
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .bulb {
-    background-image: url(/images/1600/bulb-icon-2x-min.png);
+    background-image: url(./images/1600/bulb-icon-2x-min.png);
   }
 }
 

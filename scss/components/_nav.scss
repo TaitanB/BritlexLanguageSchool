@@ -26,6 +26,7 @@
     background-color: var(--color-white);
     z-index: 1;
     left: -350px;
+    top: 0;
 
     transition: left 500ms linear;
 
@@ -161,6 +162,6 @@
 }
 
 .animationClose {
-  left: -500px;
-  transition: left 500ms linear;
+  top: -1500px;
+  transition: top 500ms linear;
 }

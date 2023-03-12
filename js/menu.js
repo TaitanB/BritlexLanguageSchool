@@ -17,11 +17,11 @@ function toggleMenu() {
 }
 
 function animationOpen() {
-  refs.wraper.classList.add("animationOpen");
+  refs.wraper.classList.toggle("animationOpen");
   refs.wraper.classList.remove("animationClose");
 }
 
 function animationClose() {
-  refs.wraper.classList.add("animationClose");
+  refs.wraper.classList.toggle("animationClose");
   refs.wraper.classList.remove("animationOpen");
 }
