@@ -6,9 +6,7 @@
   height: 100%;
   z-index: 1;
 
-  @include tablet {
-    background-color: rgba(7, 34, 47, 0.7);
-  }
+  background-color: rgba(7, 34, 47, 0.7);
 
   @include desktop {
     display: flex;
@@ -25,10 +23,7 @@
     width: 300px;
     background-color: var(--color-white);
     z-index: 1;
-    left: -350px;
-    top: 0;
-
-    transition: left 500ms linear;
+    left: -100%;
 
     @include tablet {
       padding: 0 39px;
@@ -162,6 +157,6 @@
 }
 
 .animationClose {
-  top: -1500px;
-  transition: top 500ms linear;
+  left: -100%;
+  transition: left 500ms linear;
 }
