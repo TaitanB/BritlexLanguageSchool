@@ -203,7 +203,10 @@ body {
   width: 300px;
   background-color: var(--color-white);
   z-index: 1;
-  left: -100%;
+  left: -350px;
+  top: 0;
+  -webkit-transition: left 500ms linear;
+  transition: left 500ms linear;
 }
 @media screen and (min-width: 768px) {
   .nav__wraper {
@@ -376,9 +379,9 @@ body {
 }
 
 .animationClose {
-  left: -100%;
-  -webkit-transition: left 500ms linear;
-  transition: left 500ms linear;
+  top: -1500px;
+  -webkit-transition: top 500ms linear;
+  transition: top 500ms linear;
 }
 
 .hero {
