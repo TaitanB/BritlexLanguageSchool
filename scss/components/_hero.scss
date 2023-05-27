@@ -101,9 +101,13 @@
     position: absolute;
     width: 72px;
     height: 72px;
-    background-image: url(../images/768/light-bulb-min.png);
     bottom: 0;
     right: 0;
+
+    background-image: url(../images/768/light-bulb-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include retina {
       background-image: url(../images/768/light-bulb-2x-min.png);
@@ -114,7 +118,11 @@
     width: 120px;
     height: 120px;
     bottom: 50px;
+
     background-image: url(../images/1600/bulb-icon-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include retina {
       background-image: url(../images/1600/bulb-icon-2x-min.png);
