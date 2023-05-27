@@ -10,10 +10,13 @@
 </ul>
 
 <b>Desktop:</b>
+
 ![desktop](images/desktop.jpg)
 
 <b>Tablet:</b>
+
 ![tablet](images/tablet.jpg)
 
 <b>Mobile:</b>
+
 <img src="images/mobile.jpg" alt="mobile" style="width:280px;">
